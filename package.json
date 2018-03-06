@@ -1,0 +1,36 @@
+{
+  "name": "@dnepro/jest-test",
+  "description": "Demo to show that jest doesn't work with babel v7",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Roman Minchyn <hello@roman-minchyn.de> (https://roman-minchyn.de)",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
+  "repository": "github:dnepro/jest-test",
+  "scripts": {
+    "//1": " --- NPM Hooks --- ",
+    "test": "npm run test:js",
+    "//3": " --- Testing --- ",
+    "test:js": "jest --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.40",
+    "@babel/runtime": "7.0.0-beta.40",
+    "babel-jest": "22.4.1",
+    "babel-loader": "8.0.0-beta.0",
+    "babel-preset-react-app": "4.0.0-next.9754a231",
+    "jest": "22.4.2",
+    "regenerator-runtime": "0.11.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.0.0-beta.40",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./config/jest/jest.config.js",
+    "testPathIgnorePatterns": [
+      "__snapshots__"
+    ]
+  }
+}
